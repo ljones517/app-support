@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Privacy Policy for MDM Assign: how credentials, device information, and local app data are handled.">
+    <meta name="theme-color" content="#f7f8fa">
+    <title>MDM Assign Privacy Policy · Logan Jones Applications</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #202b3a;
+        background: #f7f8fa;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: radial-gradient(ellipse 900px 600px at 85% 0%, #dceee5, transparent);
+        line-height: 1.75;
+      }
+      header, main, footer { width: min(100% - 48px, 720px); margin-inline: auto; }
+      header { padding-block: 32px; font-size: 14px; font-weight: 650; }
+      .brand { display: flex; align-items: center; gap: 12px; color: #202b3a; text-decoration: none; }
+      .brand-mark {
+        display: grid;
+        place-items: center;
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+        border-radius: 11px;
+        background: #285d49;
+        color: #fff;
+        font-size: 13px;
+      }
+      nav { margin-top: 24px; font-weight: 500; }
+      main { padding-block: 24px 64px; }
+      .eyebrow { color: #37604d; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+      h1 { margin: 12px 0 16px; font-size: clamp(36px, 7vw, 48px); line-height: 1.15; letter-spacing: -0.045em; font-weight: 650; }
+      h1 span { color: #376b56; }
+      .effective { color: #566170; font-size: 14px; margin-bottom: 28px; }
+      h2 { margin: 32px 0 12px; font-size: 21px; line-height: 1.35; letter-spacing: -0.025em; font-weight: 650; }
+      p { margin: 0 0 16px; }
+      ul { padding-left: 24px; margin-block: 0 16px; }
+      li { margin-bottom: 6px; }
+      a { color: #285d49; text-underline-offset: 4px; overflow-wrap: anywhere; }
+      a:hover { color: #163d2e; }
+      a:focus-visible { outline: 3px solid #285d49; outline-offset: 5px; border-radius: 2px; }
+      footer { padding-block: 24px; border-top: 1px solid #e1e5e9; color: #66717e; font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">LJ</span>Logan Jones Applications</a>
+      <nav aria-label="Site navigation"><a href="./">← App support</a></nav>
+    </header>
+    <main>
+      <article aria-labelledby="policy-title">
+        <p class="eyebrow">MDM Assign</p>
+        <h1 id="policy-title">Privacy Policy<br><span>for MDM Assign</span></h1>
+        <p class="effective">Effective date: <time datetime="2026-10-23">October 23, 2026</time></p>
+        <p>MDM Assign is an independent app for managing devices through the Apple School Manager and Apple Business Manager APIs. This policy explains how the app handles your information.</p>
+
+        <h2>Information the app uses</h2>
+        <p>When you configure a profile, MDM Assign uses the information you provide, including:</p>
+        <ul>
+          <li>Profile name</li>
+          <li>Apple School Manager or Apple Business Manager API client ID and key ID</li>
+          <li>API private key</li>
+        </ul>
+        <p>The app also accesses information returned by Apple’s APIs, such as device serial numbers, models, assignment status, device-management servers, migration details, AppleCare coverage, and organization audit events. Audit events may include administrator names and identifiers.</p>
+        <p>This information is used to display your organization’s devices and carry out actions you request, including assignments, migrations, and device releases.</p>
+
+        <h2>Where information is stored</h2>
+        <p>API credentials and cached access tokens are stored in the Apple Keychain on your device. These Keychain entries are configured not to synchronize through iCloud Keychain or transfer to another device.</p>
+        <p>Device inventory and activity history are cached locally so the app can display previously retrieved information and search your fleet efficiently. App preferences and sync progress are also stored locally.</p>
+        <p>Local app data may be included in device backups, depending on your device settings and Apple’s backup behavior.</p>
+
+        <h2>Communication with Apple</h2>
+        <p>MDM Assign communicates directly with Apple’s authentication and Apple School Manager or Apple Business Manager API services over HTTPS.</p>
+        <p>Your API private key is used on your device to sign authentication requests. The private key itself is not sent to Apple. Signed authentication assertions and access tokens are sent to Apple as needed to authenticate requests.</p>
+        <p>When you perform a management action, the app sends the information needed to carry out that action, such as device serial numbers, the selected server, and migration deadlines.</p>
+        <p>Apple’s handling of information is governed by Apple’s applicable privacy policies and service terms.</p>
+
+        <h2>Developer access, analytics, and advertising</h2>
+        <p>MDM Assign does not send your API credentials, device inventory, or organization audit data to developer-operated servers.</p>
+        <p>The app does not include advertising, third-party analytics, or tracking SDKs, and the developer does not sell or rent your information.</p>
+        <p>Apple may collect or make available app diagnostics under your device settings and Apple’s policies.</p>
+
+        <h2>Device authentication</h2>
+        <p>If you enable device authentication, MDM Assign uses Apple’s system authentication to unlock profiles with Face ID, Touch ID, or your device passcode, as available.</p>
+        <p>The app receives the authentication result. It does not receive or store your biometric data or device passcode.</p>
+
+        <h2>Exports and sharing</h2>
+        <p>You can choose to export or share information through the system share sheet. Information you share is sent to the app, service, or recipient you select and is subject to their privacy practices.</p>
+        <p>Exported copies are outside MDM Assign’s control and are not removed when you delete a profile from the app.</p>
+
+        <h2>Demo mode</h2>
+        <p>Demo mode uses sample data and simulates management actions locally. Demo actions do not connect to Apple or affect your organization’s devices.</p>
+
+        <h2>Retention and deletion</h2>
+        <p>Credentials and cached information remain on your device until you delete the associated profile or the data is otherwise removed.</p>
+        <p>Use Profile → Delete Current Profile to remove that profile’s credentials, cached access token, and associated cached device and activity data from the app.</p>
+        <p>Deleting a profile does not delete your organization’s information from Apple’s services, revoke an API key, or reverse management actions already submitted to Apple. API keys can be revoked through your organization’s Apple administration tools.</p>
+        <p>Deleting the app may leave Keychain entries on the device. To remove stored credentials, delete your profiles within the app before uninstalling.</p>
+
+        <h2>Children’s privacy</h2>
+        <p>MDM Assign is intended for authorized organization administrators, not for use by children. It does not ask children to create accounts or provide personal information.</p>
+        <p>Administrators are responsible for using the app in accordance with their organization’s policies and applicable privacy requirements.</p>
+
+        <h2>Support</h2>
+        <p>If you contact the developer for support, information you voluntarily provide will be used to respond to your request and troubleshoot the issue. Do not include API private keys, access tokens, or other secrets in support messages.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>This policy may be updated as the app changes. The latest version will be published on this page with an updated effective date.</p>
+
+        <h2>Contact</h2>
+        <p>For privacy questions or support:</p>
+        <ul>
+          <li>Support: <a href="https://ljones517.github.io/app-support/">https://ljones517.github.io/app-support/</a></li>
+          <li>Email: <a href="mailto:ljones@ljlabs.org">ljones@ljlabs.org</a></li>
+        </ul>
+      </article>
+    </main>
+    <footer>Logan Jones Applications · <a href="./">App support</a></footer>
+  </body>
+</html>

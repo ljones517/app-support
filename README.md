@@ -12,6 +12,12 @@ A simple, mobile-friendly support page for all Logan Jones Applications apps. No
 
 Use that URL as the **Support URL** for each app in App Store Connect.
 
+## MDM Assign privacy policy
+
+`mdm-assign-privacy.html` contains the MDM Assign privacy policy and is linked from the support page. Include this file when uploading the site.
+
+Use `https://ljones517.github.io/app-support/mdm-assign-privacy.html` as MDM Assign’s **Privacy Policy URL** in App Store Connect.
+
 ## Edit or preview
 
-Open `index.html` in a browser to preview it. All content and styling are in that file. The support email is `ljones@ljlabs.org`; update both the visible address and the `mailto:` link if it changes.
+Open either HTML file in a browser to preview it. Each page includes its own styling. The support email is `ljones@ljlabs.org`; update both the visible address and the `mailto:` link on both pages if it changes.
