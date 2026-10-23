@@ -24,6 +24,9 @@
         min-height: 100svh;
         display: flex;
         flex-direction: column;
+        background:
+          radial-gradient(ellipse at 85% 0%, #dceee5 0%, transparent 55%),
+          radial-gradient(ellipse at 0% 65%, #e7eafa 0%, transparent 50%);
       }
 
       header, main, footer {
@@ -32,6 +35,9 @@
       }
 
       header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
         padding-block: 40px;
         font-size: 14px;
         font-weight: 650;
@@ -40,7 +46,27 @@
 
       main { padding-block: 64px 80px; }
 
+      .brand-mark {
+        display: grid;
+        place-items: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 11px;
+        background: #285d49;
+        color: #fff;
+        font-size: 13px;
+        letter-spacing: -0.05em;
+        box-shadow: 0 4px 12px #285d491a;
+      }
+
       .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 7px 11px;
+        border: 1px solid #285d4926;
+        border-radius: 100px;
+        background: #ffffff80;
         margin: 0 0 16px;
         color: #37604d;
         font-size: 12px;
@@ -48,6 +74,16 @@
         letter-spacing: 0.12em;
         text-transform: uppercase;
       }
+
+      .eyebrow::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #37604d;
+      }
+
+      h1 span { color: #376b56; }
 
       h1 {
         margin: 0 0 20px;
@@ -68,9 +104,10 @@
       .contact {
         margin-top: 36px;
         padding: 28px;
-        background: #fff;
-        border: 1px solid #e1e5e9;
-        border-radius: 16px;
+        background: linear-gradient(135deg, #fff, #f9fcfa);
+        border: 1px solid #dce6df;
+        border-radius: 20px;
+        box-shadow: 0 16px 48px -20px #253e3426, 0 2px 6px #253e3405;
       }
 
       h2 {
@@ -96,10 +133,27 @@
 
       .email {
         display: inline-block;
-        padding-block: 8px;
-        font-size: 22px;
+        padding: 13px 18px;
+        border-radius: 10px;
+        background: #285d49;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
         font-weight: 550;
         overflow-wrap: anywhere;
+        transition: background 160ms ease, box-shadow 160ms ease;
+      }
+
+      .email:hover {
+        background: #1c4937;
+        color: #fff;
+        box-shadow: 0 4px 12px #285d4926;
+      }
+
+      .email span { margin-left: 10px; }
+
+      @media (prefers-reduced-motion: reduce) {
+        .email { transition: none; }
       }
 
       .note {
@@ -126,14 +180,14 @@
     </style>
   </head>
   <body>
-    <header>Logan Jones Applications</header>
+    <header><span class="brand-mark" aria-hidden="true">LJ</span>Logan Jones Applications</header>
     <main>
       <p class="eyebrow">App support</p>
-      <h1>A little help,<br>whenever you need it.</h1>
+      <h1>A little help,<br><span>whenever you need it.</span></h1>
       <p class="intro">Have a question, found a bug, or want to share an idea? Get in touch for help with any of our apps.</p>
       <section class="contact" aria-labelledby="contact-heading">
         <h2 id="contact-heading">Let’s get it sorted.</h2>
-        <a class="email" href="mailto:ljones@ljlabs.org?subject=App%20Support">ljones@ljlabs.org</a>
+        <a class="email" href="mailto:ljones@ljlabs.org?subject=App%20Support">ljones@ljlabs.org<span aria-hidden="true">↗</span></a>
         <p class="note">Please include the app name and a brief description of what you need help with. If something isn’t working, your device model, iOS version, and a screenshot can help.</p>
       </section>
     </main>
