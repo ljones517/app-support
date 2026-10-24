@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CasperWatch Privacy Policy: how connection credentials, Jamf inventory, and local app data are handled.">
+    <meta name="theme-color" content="#f7f8fa">
+    <title>CasperWatch Privacy Policy · Logan Jones Applications</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #202b3a;
+        background: #f7f8fa;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: radial-gradient(ellipse 900px 600px at 85% 0%, #dceee5, transparent);
+        line-height: 1.75;
+      }
+      header, main, footer { width: min(100% - 48px, 720px); margin-inline: auto; }
+      header { padding-block: 32px; font-size: 14px; font-weight: 650; }
+      .brand { display: flex; align-items: center; gap: 12px; color: #202b3a; text-decoration: none; }
+      .brand-mark {
+        display: grid;
+        place-items: center;
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+        border-radius: 11px;
+        background: #285d49;
+        color: #fff;
+        font-size: 13px;
+      }
+      nav { margin-top: 24px; font-weight: 500; }
+      main { padding-block: 24px 64px; }
+      .eyebrow { color: #37604d; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+      h1 { margin: 12px 0 16px; font-size: clamp(36px, 7vw, 48px); line-height: 1.15; letter-spacing: -0.045em; font-weight: 650; }
+      h1 span { color: #376b56; }
+      .effective { color: #566170; font-size: 14px; margin-bottom: 28px; }
+      h2 { margin: 32px 0 12px; font-size: 21px; line-height: 1.35; letter-spacing: -0.025em; font-weight: 650; }
+      p { margin: 0 0 16px; }
+      ul { padding-left: 24px; margin-block: 0 16px; }
+      li { margin-bottom: 6px; }
+      a { color: #285d49; text-underline-offset: 4px; overflow-wrap: anywhere; }
+      a:hover { color: #163d2e; }
+      a:focus-visible { outline: 3px solid #285d49; outline-offset: 5px; border-radius: 2px; }
+      footer { padding-block: 24px; border-top: 1px solid #e1e5e9; color: #66717e; font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">LJ</span>Logan Jones Applications</a>
+      <nav aria-label="Site navigation"><a href="./">← App support</a></nav>
+    </header>
+    <main>
+      <article aria-labelledby="policy-title">
+        <p class="eyebrow">CasperWatch</p>
+        <h1 id="policy-title"><span>CasperWatch</span><br>Privacy Policy</h1>
+        <p class="effective">Effective date: <time datetime="2026-10-23">October 23, 2026</time></p>
+        <p>CasperWatch is developed by Logan Jones Applications. It lets authorized users view device and computer inventory from their organization’s Jamf environment.</p>
+
+        <h2>Information the app uses</h2>
+        <p>When you create a connection profile, you provide a profile name, Jamf region, integration client ID and secret, tenant identifier, and optionally an environment identifier.</p>
+        <p>CasperWatch stores saved profiles in your device’s Keychain. These credentials are accessible only while the device is unlocked and are configured not to migrate to another device. The app also stores your active profile name in local preferences.</p>
+
+        <h2>Connecting to Jamf</h2>
+        <p>CasperWatch sends integration credentials to the selected Jamf gateway over HTTPS to authenticate. Subsequent requests include authentication tokens, tenant or environment identifiers, and information needed to retrieve inventory, such as search terms and filters.</p>
+        <p>Jamf receives these requests and normal network information, such as your IP address. Jamf’s handling of this information is governed by its applicable privacy terms and your organization’s agreements.</p>
+        <p>Inventory displayed by CasperWatch may include device names, serial numbers, assigned usernames, hardware and software details, and other information supplied by your organization.</p>
+        <p>CasperWatch does not send your credentials or inventory to a developer-operated server.</p>
+
+        <h2>Local storage</h2>
+        <p>CasperWatch displays inventory received from Jamf and does not explicitly save inventory to files. It uses Apple’s networking services, which may maintain network caches or cookies.</p>
+        <p>Saved connection profiles remain in the Keychain until you remove them. Do not rely on uninstalling the app to remove Keychain credentials; delete saved profiles within CasperWatch first.</p>
+
+        <h2>Removing your information</h2>
+        <p>Deleting a profile or signing out removes the selected profile’s saved credentials from your device when the operation succeeds. If removal fails, the app displays an error so you can retry. Other saved profiles remain until you delete them.</p>
+        <p>Removing a profile does not delete inventory from Jamf or revoke your integration credentials. Contact your organization’s administrator to revoke credentials or request changes to organization-controlled information.</p>
+
+        <h2>Analytics, advertising, and tracking</h2>
+        <p>CasperWatch does not include advertising or analytics SDKs and does not track you across other companies’ apps or websites. We do not sell your personal information.</p>
+
+        <h2>Demo mode</h2>
+        <p>Demo mode uses fictional sample records included with the app. It does not send demo requests to Jamf or save demo credentials in the Keychain.</p>
+
+        <h2>Support</h2>
+        <p>If you contact us, we receive the information you choose to provide, such as your email address, message, and attachments. We use this information to respond to your request.</p>
+        <p>Please do not send integration secrets, authentication tokens, or confidential inventory information. You may contact us to request deletion of support correspondence.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>We may update this policy as CasperWatch changes. Updates will be published on this page with a revised effective date.</p>
+
+        <h2>Contact</h2>
+        <p>Logan Jones Applications</p>
+        <ul>
+          <li>Email: <a href="mailto:ljones@ljlabs.org">ljones@ljlabs.org</a></li>
+          <li>Support: <a href="https://ljones517.github.io/app-support/">https://ljones517.github.io/app-support/</a></li>
+        </ul>
+      </article>
+    </main>
+    <footer>Logan Jones Applications · <a href="./">App support</a></footer>
+  </body>
+</html>
