@@ -1,29 +1,26 @@
-# Logan Jones Applications — App Support
+# Logan Jones Applications
 
-A simple, mobile-friendly support page for all Logan Jones Applications apps. No dependencies, JavaScript, or build step.
+Support and privacy information for apps by Logan Jones Applications.
 
-## Publish on GitHub Pages
+## Get support
 
-1. Create a GitHub repository and upload all HTML files and `.nojekyll` to the root of its `main` branch.
-2. In the repository, open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select **main** and **/ (root)**, then click **Save**.
-5. Once deployment finishes, GitHub displays the published URL in **Settings → Pages**. It will typically be `https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/`.
+Have a question, found a bug, or want to share feedback?
 
-Use that URL as the **Support URL** for each app in App Store Connect.
+- **Support website:** [App Support](https://ljones517.github.io/app-support/)
+- **Email:** [ljones@ljlabs.org](mailto:ljones@ljlabs.org)
 
-## MDM Assign privacy policy
+Please include the app name and a brief description of what you need help with. For technical issues, your device model, operating system version, and a screenshot can help. Please leave out passwords, API keys, authentication tokens, and confidential organization information.
 
-`mdm-assign-privacy.html` contains the MDM Assign privacy policy and is linked from the support page. Include this file when uploading the site.
+## Our apps
 
-Use `https://ljones517.github.io/app-support/mdm-assign-privacy.html` as MDM Assign’s **Privacy Policy URL** in App Store Connect.
+### MDM Assign
 
-## CasperWatch privacy policy
+Manage devices through the Apple School Manager and Apple Business Manager APIs.
 
-`casperwatch-privacy.html` contains the CasperWatch privacy policy and is linked from the support page. Include this file when uploading the site.
+[Read the MDM Assign Privacy Policy](https://ljones517.github.io/app-support/mdm-assign-privacy.html)
 
-Use `https://ljones517.github.io/app-support/casperwatch-privacy.html` as CasperWatch’s **Privacy Policy URL** in App Store Connect.
+### CasperWatch
 
-## Edit or preview
+View device and computer inventory from your organization’s Jamf environment.
 
-Open any HTML file in a browser to preview it. Each page includes its own styling. The support email is `ljones@ljlabs.org`; update both the visible address and the `mailto:` link on all pages if it changes.
+[Read the CasperWatch Privacy Policy](https://ljones517.github.io/app-support/casperwatch-privacy.html)
